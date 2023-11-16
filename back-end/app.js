@@ -6,11 +6,11 @@ const cors = require('cors')
 
 app.use(cors())
 app.use(express.json())
-app.use("/colors", colorsController)
+app.use("/songs", songController)
 
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Colors App!')
+    res.send('Welcome to the tuner App!')
 
 })
 
